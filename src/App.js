@@ -1,6 +1,5 @@
 import React from "react"
 import { css } from "@emotion/react"
-import Hello from "./Hello.js"
 
 const App = () => {
   return (
@@ -9,8 +8,9 @@ const App = () => {
         background-color: pink;
       `}
     >
-      <h1>I'm yellow</h1>
-      <Hello />
+      <h1>hello</h1>
     </div>
   )
 }
+
+export default App

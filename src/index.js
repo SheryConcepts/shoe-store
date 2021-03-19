@@ -1,6 +1,5 @@
-import "./index.css"
 import ReactDOM from "react-dom"
-import App from "./App.jsx"
+import App from "./App.js"
 
 let root = document.getElementById("root")
 
