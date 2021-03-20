@@ -1,4 +1,4 @@
-## react-dev-setup
+## Shoe Store with React
 
 ## Building and running on localhost
 
