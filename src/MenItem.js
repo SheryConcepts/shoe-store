@@ -6,9 +6,14 @@ import {
   Typography,
 } from "@material-ui/core"
 import { css } from "@emotion/react"
+import { useNavigate } from "react-router-dom"
 
 const MenItem = (props) => {
   const { src, name } = props
+  const navigate = useNavigate()
+  const handleBuy = () => {
+    navigate(`/shoe/${name}`)
+  }
   return (
     <Card
       css={css`
@@ -21,7 +26,9 @@ const MenItem = (props) => {
         <Typography variant="h6">{name}</Typography>
       </CardContent>
       <CardActions>
-        <Button variant="contained">Buy</Button>
+        <Button onClick={handleBuy} variant="contained">
+          Buy
+        </Button>
       </CardActions>
     </Card>
   )
